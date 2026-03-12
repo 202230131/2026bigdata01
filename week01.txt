@@ -13,4 +13,13 @@ git status
 git add 파일명
 git add .
 git commit -m"커밋 메시지"
-git config --global 
+git config --global "email"
+git config --global "이름"
+
+
+2교시 
+git log
+git checkout hashcode(7자리~max)
+git checkout -
+
+
