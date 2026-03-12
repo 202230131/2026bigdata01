@@ -1,0 +1,16 @@
+1교시
+리눅스 기초 명령어 
+ls
+ls -a 
+touch week01.txt
+cd git 
+cd .
+echo "daelim"
+echo "deealim >> d
+
+깃 기초 명령어 
+git status
+git add 파일명
+git add .
+git commit -m"커밋 메시지"
+git config --global 
