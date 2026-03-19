@@ -9,10 +9,12 @@ echo "daelim"
 echo "deealim >> d
 
 깃 기초 명령어 
-git status
-git add 파일명
-git add .
-git commit -m"커밋 메시지"
+git init ( 안하면 fatal 오류) --> .git 생성
+git status (새로운 파일 생성시 untracted , 기존 clean , modified)
+git add 파일명 (git stage에 올림)
+git add . ( . == all)
+git reset (git status에 올라간 track을 untracked로 바꿈)
+git commit -m"커밋 메시지" (git)
 git config --global "email"
 git config --global "이름"
 

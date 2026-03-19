@@ -1,6 +1,6 @@
-import numpy
+import numpy as np
 
 scores = [100,90,80,70]
-average = numpy.mean(scores)
+average = np.mean(scores)
 
 print(average)
