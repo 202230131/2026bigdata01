@@ -1,4 +1,6 @@
-import pandas as pd
+import numpy as np
+
 scores = [100,90,80,70]
-average = pd.Series(scores).mean()
+average = np.mean(scores)
+
 print(average)
