@@ -1,0 +1,44 @@
+git reset --hard HEAD (merge나 commit 최근상태 초기화)
+git reset --hard HEAD~1
+git reset --soft 
+git merge --abort
+
+해시코드가 다른 것들이 pull되어 충돌이 날 경우 ( 에러 reject 원격지에 local되지 않은/ (main/merging) $ :
+
+git fetch origin
+git merge origin/main
+
+git merge로 경로 변경시키면 됨 
+
+해시코드가 다르지만 내용이 같을 경우 에러
+
+push는 되고 pull은 안될 경우
+push pull둘다 안될 경우
+
+1. 내용이 달라서 합칠 수 없을 때: Conflict (충돌)
+가장 흔한 경우입니다. 같은 파일의 같은 부분을 서로 다르게 수정했을 때 발생합니다.
+상황: 로컬에선 A라고 썼는데, 원격에선 이미 B로 수정되어 있음.
+에러 메시지: CONFLICT (content): Merge conflict in [파일명]
+특징: Git이 자동으로 합치지 못하고 사용자가 직접 수정할 때까지 (merging) 상태가 유지됩니다.
+
+ 3. 파일의 위치나 이름이 바뀌었을 때: Tree Conflict
+한쪽에서는 파일을 수정했는데, 다른 쪽에서는 그 파일을 삭제하거나 이름을 바꿨을 때 발생합니다.
+상황: 나는 main.cpp를 고치고 있는데, 원격에선 누군가 main.cpp를 core.cpp로 이름을 바꿈.
+에러 메시지: CONFLICT (modify/delete): [파일명] deleted in [상대방] and modified in [나].
+해결: 파일을 삭제된 상태로 둘지, 바뀐 이름으로 다시 살릴지 결정한 후 git add/rm 명령어로 정리해야 합니다.
+
+git remote add origin <URL>
+git push origin <branch>
+git pull origin <branch>
+git clone <URL>
+
+
+--------- git branch ---------
+
+git branch [branch이름] ----- git branch는 포인터 개념이라 포인터의 갯수가 많아도 해당 해시코드만 참조하기 떼문에 용량이랑 관련이 없다
+git branch (상태 확인)
+git switch [branch이름] --- checkout으로도 가능하긴함
+
+git checkout -b [branch] ===== git branch + git switch
+git switch -c [branch]
+git push origin --delete branch]
