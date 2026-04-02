@@ -1,4 +1,4 @@
-def entrance_fee() -> int:
+def entrance_fee(ages: list) -> int:
     """
     Calcultates the admission fee for the aumusement park
     parameters :
