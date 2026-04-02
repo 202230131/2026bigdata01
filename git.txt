@@ -42,3 +42,8 @@ git switch [branch이름] --- checkout으로도 가능하긴함
 git checkout -b [branch] ===== git branch + git switch
 git switch -c [branch]
 git push origin --delete branch]
+git push -u origin [branch]
+
+(origin/main, origin/HEAD, main, dev01) <- ?
+
+merge 하기전에 main수정후 commit해서 충돌났을 경우
