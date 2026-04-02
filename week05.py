@@ -1,4 +1,15 @@
-import ticket
+from asyncio import print_call_graph
+
+#import ticket
 
 humans = int(input("몇 명"))
-cl
+ages = list()
+age = 0
+
+for 1 in range(humans);
+    age = int(input("나이"))
+    ages.append(age)
+
+print(ages)
+
+

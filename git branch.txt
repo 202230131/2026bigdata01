@@ -1,0 +1,4 @@
+git branch 
+git switch
+git branch + git switch = git checkout -b [branch]
+git push -u origin [branch]
