@@ -10,7 +10,7 @@ def entrance_fee(ages: list) -> int:
 
     kid, adult, seinor = 5000,10000,7000
     total_fee = 0
-    for age in ages;
+    for age in ages:
         if age >= 65:
             total_fee = total_fee + seinor
         elif age >= 19:

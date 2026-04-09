@@ -46,4 +46,13 @@ git push -u origin [branch]
 
 (origin/main, origin/HEAD, main, dev01) <- ?
 
-merge 하기전에 main수정후 commit해서 충돌났을 경우
+merge  commit해서 충돌났을 경우
+
+branch 해제하는법
+
+git log --oneline : 한 화면에 commit 내역들만 정리해서 올려준것
+git graph : 그래프로 보여줌 oneline에 연결해서 할 수 있음
+git checkout - :는 맨 마지막 해쉬코드로 변경
+
+
+
