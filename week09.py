@@ -77,9 +77,11 @@ print(mpg.head())
 print(mpg.info())
 mpg.sort_values('mpg', ascending=False)
 mpg['horsepower'] = mpg['horsepower'].fillna(
-    mpg.groupby('horsepower')['horsepower'].transform('mean')
+    mpg.groupby('horsepower')['horsepower'].transform('median')
 )
 print(mpg.info())
+
+#----------------------------------------------------11주차--------------------------------------------------------
 
 
 
